@@ -10,35 +10,66 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .div-percent {
+      display: flex;
+      justify-content: center;
+      border: 1px solid black;
+      width: 60vh;
+      height: 35vh;
+      margin-top: 28vh;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
+
 <body>
 
-  Bill
+<div class="div-percent">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+  <p class="title">SPLITTER</p>
 
-  Number of People
+  <div class="container">
+    <p class="bill">Bill</p>
+      <input class="bill-message" type="text">
 
-  Tip Amount
-  / person
+      <p class="slect-tip">Select Tip %</p>
+        
+      <button class="five-percent btn">5%</button>
+      <button class="ten-precent btn">10%</button>
+      <button class="fifteen-percent btn">15%</button>
+      <button class="twentyfive-percent btn">25%</button>
+      <button class="fifty-percent btn">50%</button>
+      <button class="custom-percent btn">Custom</button>
+          
+      <p class="people">Number of People</p>  
 
-  Total
-  / person
+      <input class="people-message" type="number">
+  </div>
 
-  Reset
+  <div class="tip-message">
+    <p class="tip-amount">Tip Amount</p> 
+
+    <p class="person">/ person</p>    
+  
+    <p class="total">Total</p>
+
+    <p class="person">/ person</p>
+  
+    <button class="reset">Reset</button>
+  </div>    
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Gaston Ariel Fauret Caceres</a>.
   </div>
 </body>
 </html>
