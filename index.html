@@ -5,24 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body{
+
+    body {
+      display: grid;
+      place-content: center;
+      font-family: 'Space Mono', monospace;
+      background-color: hsl(185, 41%, 84%);
+    }
+
+    .container {
+      width: 100vh;
+      height: 100vh;
+      display: grid;
+      place-content: center;
+      background-color: hsl(185, 41%, 84%);
+    } 
+    
+    .div-percent {
+      display: flex;
+      justify-content: space-evenly;
+      border-radius: 1vh;
+      width: 70vh;
+      height: 35vh;
+      align-items: center;
+      flex-direction: row;
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .main-container {
+      width: 31vh;
+      height: 30vh;
+      background-color:hsl(0, 0%, 100%);
+      border-radius: 1vh;
+    }
+
+    .tip-message {
+      width: 31vh;
+      height: 30vh;
+      background-color: hsl(183, 100%, 15%);
+      border-radius: 1vh;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-around;
+    }
+
+    .first-title-tip {
+      display: flex;
+      align-items: center;
+      gap: 8vh;
+    }
+
+    .first-words-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tip-amount, .total-amount {
+      margin: 0px;
+      color: hsl(0, 0%, 100%);
+      font-size: 11px;
+    }
+
+    .person {
+      margin: 0px;
+      color: hsl(184, 14%, 56%);
+      font-size: 9px;
+    }
+
+    .second-title-tip {
+      display: flex;
+      align-items: center;
+      gap: 8vh;
+    }
+
+    .price-message, .total-message {
+      color: hsl(172, 67%, 45%);
+      font-size: 34px;
+      margin: 0px;
+    }
+
+    .second-words-container {
+      display: flex;
+      flex-direction: column;
     }
   
-    .div-percent {
-      display: flex;
-      justify-content: center;
-      border: 1px solid black;
-      width: 60vh;
-      height: 35vh;
-      margin-top: 28vh;
+    .reset {
+      width: 25vh;
+      height: 3.5vh;
+      border-radius: 0.5vh;
+      border: none;
+      background-color: hsl(172, 67%, 45%);
+      color: hsl(183, 100%, 15%);
+      font-family: 'Space Mono', monospace;
     }
 
     .attribution { font-size: 11px; text-align: center; }
@@ -32,39 +115,68 @@
 
 <body>
 
-<div class="div-percent">
-
+<!-- Contenedor De toda la Pagina -->
+<div class="container"> 
   <p class="title">SPLITTER</p>
+  
+  <!-- Contenedor del "Tip Calculator" -->
+  <div class="div-percent"> 
 
-  <div class="container">
+  <!-- Contenedor de la Izquierda -->
+  <div class="main-container">
     <p class="bill">Bill</p>
       <input class="bill-message" type="text">
 
       <p class="slect-tip">Select Tip %</p>
-        
-      <button class="five-percent btn">5%</button>
-      <button class="ten-precent btn">10%</button>
-      <button class="fifteen-percent btn">15%</button>
-      <button class="twentyfive-percent btn">25%</button>
-      <button class="fifty-percent btn">50%</button>
-      <button class="custom-percent btn">Custom</button>
+      
+      <!--Contenedor de los Botones-->
+      <div class="button-container">
+        <button class="five-percent btn">5%</button>
+        <button class="ten-precent btn">10%</button>
+        <button class="fifteen-percent btn">15%</button>
+        <button class="twentyfive-percent btn">25%</button>
+        <button class="fifty-percent btn">50%</button>
+        <button class="custom-percent btn">Custom</button>
+      </div>
+      
           
       <p class="people">Number of People</p>  
 
       <input class="people-message" type="number">
   </div>
 
+  <!--Contenedor General de la Derecha-->
   <div class="tip-message">
-    <p class="tip-amount">Tip Amount</p> 
+    <!--Contenedor de la Primera Linea: 2 Objetos-->
+    <div class="first-title-tip">
+      <!--Contendor de la Izquierda: 2 objetos-->
+      <div class="first-words-container">
+        <p class="tip-amount">Tip Amount</p>
+        <p class="person">/ person</p>
+      </div>      
+      <!--Contenedor de la derecha: 1 objeto-->
+      <div class="price-message-container">
+        <p class="price-message">$4.27</p>
+      </div>
+    </div>    
 
-    <p class="person">/ person</p>    
-  
-    <p class="total">Total</p>
+    <!--Contenedor de la Segunda Linea: 2 Objetos-->
+    <div class="second-title-tip">
+      <!--Contendor de la Izquierda: 2 objetos-->
+      <div class="second-words-container">
+        <p class="total-amount">Total</p>
+        <p class="person">/ person</p>
+      </div>      
+      <!--Contenedor de la derecha: 1 objeto-->
+      <div class="second-price-message-container">
+        <p class="total-message">$32.79</p>
+      </div>
+    </div>    
 
-    <p class="person">/ person</p>
-  
-    <button class="reset">Reset</button>
+    <button class="reset">RESET</button>
   </div>    
+</div>
+
 </div>
   
   <div class="attribution">
