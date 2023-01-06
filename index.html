@@ -24,10 +24,19 @@
     .container {
       width: 100vh;
       height: 100vh;
-      display: grid;
-      place-content: center;
+      display: flex;
+      flex-direction: column;
       background-color: hsl(185, 41%, 84%);
+      justify-content: center;
+      align-items: center;
     } 
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 6vh;
+      margin-top: -10vh;
+      letter-spacing: 0.8vh;
+    }
     
     .div-percent {
       display: flex;
@@ -108,8 +117,89 @@
       font-family: 'Space Mono', monospace;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .bill {
+      font-size: 11px;
+      margin-left: 1.2vh;
+      margin-bottom: 0.5vh;
+    }
+
+    .select-tip, .people {
+      font-size: 11px;
+      margin-left: 1.2vh;
+      margin-bottom: 0.5vh;
+      margin-top: 2.5vh;
+    }
+
+    .bill-message-container {
+      display: flex;
+      justify-content: center;     
+    }
+
+    .people-message-container {
+      display: flex;
+      justify-content: center;
+      }
+
+    .bill-message {
+      width: 28vh;
+      height: 3vh;
+      border: none;
+      background-color: hsl(189, 41%, 97%);
+      border-radius: 0.5vh;
+      background-image: url("./images/icon-dollar.svg");
+      background-repeat: no-repeat; 
+      }
+
+    .people-message {
+      width: 28vh;
+      height: 3vh;
+      border: none;
+      background-color: hsl(189, 41%, 97%);
+      border-radius: 0.5vh;
+      background-image: url("./images/icon-person.svg");
+      background-repeat: no-repeat; 
+    }
+
+    .button-container {
+      width: 30vh;
+      margin-left: 1.2vh;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 0.7vh;
+    }
+
+    .btn {
+      width: 9vh;
+      height: 4vh;
+      font-family: 'Space Mono', monospace;
+      background-color: hsl(183, 100%, 15%);
+      border-radius: 0.5vh;
+      border: none;
+      color: hsl(0, 0%, 100%);
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      background-color: hsl(172, 67%, 45%);
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+    }
+
+    .custom-percent:hover {
+      background-color: hsl(0, 0%, 100%);
+      color: hsl(183, 100%, 15%);
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      margin-top: 3vh;
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
   </style>
 </head>
 
@@ -117,7 +207,7 @@
 
 <!-- Contenedor De toda la Pagina -->
 <div class="container"> 
-  <p class="title">SPLITTER</p>
+  <p class="title">SPLI<br>TTER</p>
   
   <!-- Contenedor del "Tip Calculator" -->
   <div class="div-percent"> 
@@ -125,9 +215,12 @@
   <!-- Contenedor de la Izquierda -->
   <div class="main-container">
     <p class="bill">Bill</p>
-      <input class="bill-message" type="text">
+      <div class="bill-message-container">
+        <input class="bill-message" type="number">
+      </div>
+      
 
-      <p class="slect-tip">Select Tip %</p>
+      <p class="select-tip">Select Tip %</p>
       
       <!--Contenedor de los Botones-->
       <div class="button-container">
@@ -142,7 +235,10 @@
           
       <p class="people">Number of People</p>  
 
-      <input class="people-message" type="number">
+      <div class="people-message-container">
+        <input class="people-message" type="number"/>
+      </div>
+      
   </div>
 
   <!--Contenedor General de la Derecha-->
@@ -177,11 +273,13 @@
   </div>    
 </div>
 
-</div>
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Gaston Ariel Fauret Caceres</a>.
   </div>
+
+</div>
+  
+  
 </body>
 </html>
