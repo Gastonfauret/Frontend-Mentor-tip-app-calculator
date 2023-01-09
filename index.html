@@ -37,7 +37,7 @@
       margin-top: -10vh;
       letter-spacing: 0.8vh;
     }
-    
+
     .div-percent {
       display: flex;
       justify-content: space-evenly;
@@ -50,10 +50,13 @@
     }
 
     .main-container {
+      display: flex;
+      flex-direction: column;
       width: 31vh;
       height: 30vh;
       background-color:hsl(0, 0%, 100%);
       border-radius: 1vh;
+      justify-content: space-around;
     }
 
     .tip-message {
@@ -132,33 +135,65 @@
 
     .bill-message-container {
       display: flex;
-      justify-content: center;     
+      align-items: center;
+      width: 28.2vh;
+      height: 3vh; 
+      margin-left: 1.2vh;
+      background-color: hsl(189, 41%, 97%);
+      border-radius: 0.5vh;
+      justify-content: space-between;
     }
 
+    .bill-message {   
+      width: 40%; 
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      font-family: 'Space Mono', monospace;
+      color: hsl(183, 100%, 15%);
+      font-size: 18px;
+    }
+
+    .people-message {   
+      width: 16%; 
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      font-family: 'Space Mono', monospace;
+      color: hsl(183, 100%, 15%);
+      font-size: 18px;
+    }
+
+    img {
+      width: 3.1%;
+      height: 45%;
+      margin-left: 1.4vh;
+    }
+
+    .person-image {
+      width: 3.3%;
+      height: 43.5%;
+      margin-left: 1.4vh;
+    }
     .people-message-container {
       display: flex;
-      justify-content: center;
-      }
-
-    .bill-message {
-      width: 28vh;
-      height: 3vh;
-      border: none;
+      align-items: center;
+      width: 28.2vh;
+      height: 3vh; 
+      margin-left: 1.2vh;
       background-color: hsl(189, 41%, 97%);
       border-radius: 0.5vh;
-      background-image: url("./images/icon-dollar.svg");
-      background-repeat: no-repeat; 
+      justify-content: space-between;     
+    }
+
+    .prices-container {
+      width: 31vh;
+      height: 20vh;
       display: flex;
-      }
-
-    .people-message {
-      width: 28vh;
-      height: 3vh;
-      border: none;
-      background-color: hsl(189, 41%, 97%);
-      border-radius: 0.5vh;
-      background-image: url("./images/icon-person.svg");
-      background-repeat: no-repeat; 
+      flex-direction: column;
+      align-items: center;
+      margin-top: 3vh;
+      margin: none;
     }
 
     .button-container {
@@ -215,8 +250,11 @@
 
   <!-- Contenedor de la Izquierda -->
   <div class="main-container">
+
     <p class="bill">Bill</p>
+
       <div class="bill-message-container">
+        <img src="./images/icon-dollar.svg">
         <input class="bill-message" type="number">
       </div>
       
@@ -231,12 +269,12 @@
         <button class="twentyfive-percent btn">25%</button>
         <button class="fifty-percent btn">50%</button>
         <button class="custom-percent btn">Custom</button>
-      </div>
-      
+      </div>      
           
       <p class="people">Number of People</p>  
 
       <div class="people-message-container">
+        <img class="person-image" src="./images/icon-person.svg">
         <input class="people-message" type="number">
       </div>
       
@@ -244,29 +282,35 @@
 
   <!--Contenedor General de la Derecha-->
   <div class="tip-message">
-    <!--Contenedor de la Primera Linea: 2 Objetos-->
-    <div class="first-title-tip">
-      <!--Contendor de la Izquierda: 2 objetos-->
-      <div class="first-words-container">
-        <p class="tip-amount">Tip Amount</p>
-        <p class="person">/ person</p>
-      </div>      
-      <!--Contenedor de la derecha: 1 objeto-->
-      <div class="price-message-container">
-        <p class="price-message">$4.27</p>
-      </div>
-    </div>    
+    
+      <!--Contenedor de la Primera Linea: 2 Objetos-->
+      <div class="first-title-tip">
+        <!--Contendor de la Izquierda: 2 objetos-->
+        <div class="first-words-container">
+          <p class="tip-amount">Tip Amount</p>
+          <p class="person">/ person</p>
+        </div>      
+        <!--Contenedor de la derecha: 1 objeto-->
+        <div class="price-message-container">
+          <p class="price-message">$4.27</p>
+        </div>
+    </div>
 
-    <!--Contenedor de la Segunda Linea: 2 Objetos-->
-    <div class="second-title-tip">
-      <!--Contendor de la Izquierda: 2 objetos-->
-      <div class="second-words-container">
-        <p class="total-amount">Total</p>
-        <p class="person">/ person</p>
-      </div>      
-      <!--Contenedor de la derecha: 1 objeto-->
-      <div class="second-price-message-container">
-        <p class="total-message">$32.79</p>
+    <!-- Contenedor de los Textos-->
+    <div class="prices-container">
+      <!--Contenedor de la Segunda Linea: 2 Objetos-->
+      <div class="second-title-tip">
+        <!--Contendor de la Izquierda: 2 objetos-->
+        <div class="second-words-container">
+          <p class="total-amount">Total</p>
+          <p class="person">/ person</p>
+        </div>
+
+        <!--Contenedor de la derecha: 1 objeto-->
+        <div class="second-price-message-container">
+          <p class="total-message">$32.79</p>
+        </div>
+
       </div>
     </div>    
 
