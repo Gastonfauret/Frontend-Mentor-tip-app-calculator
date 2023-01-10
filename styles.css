@@ -61,16 +61,26 @@ body {
     align-items: center;
     width: 100%;
     height: 85%;
-    margin-top: -40px;
+    margin-top: -10px;
 }
 
-.first-line, .second-line {
+.first-line{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     height: 25%;
     gap: 9vh;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    gap: 8vh;
+    margin-top: 2.5vh;
 }
 
 .first-line {
@@ -80,30 +90,36 @@ body {
 .first-text-container, .second-text-container {
     display: flex;
     flex-direction: column;
-    margin: 0px;
 }
 
 .tip-amount, .total {
     color: hsl(0, 0%, 100%);
-    font-size: 9px;
+    font-size: 10px;
     margin: 0px;
-}
+    }
 
 .person {
-    color: hsl(189, 41%, 97%);
-    font-size: 7px;
+    color: hsl(184, 14%, 56%);
+    font-size: 8px;
     margin: 0px;
 }
 
 .tip-price {
     color: hsl(172, 67%, 45%);
     font-size: 28px;
+    margin: 0px;
+}
+
+.total-price {
+    color: hsl(172, 67%, 45%);
+    font-size: 28px;
+    margin: 0px; 
 }
 
 .button-reset-container {
     display: flex;
     justify-content: center;
-    margin-top: 7vh;    
+    margin-top: 8vh;    
 }
 
 .reset {
@@ -115,6 +131,11 @@ body {
     color: hsl(183, 100%, 15%);
     font-family: 'Space Mono', monospace;
 }
+
+.reset:hover {
+    background-color: hsl(184, 14%, 56%);
+    color: hsl(0, 0%, 100%);
+}   
 
 .bill {
     font-size: 11px;
