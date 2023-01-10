@@ -1,0 +1,19 @@
+{
+  "name": "frontend-mentor-tip-app-calculator",
+  "version": "1.0.0",
+  "description": "![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gastonfauret/Frontend-Mentor-tip-app-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gastonfauret/Frontend-Mentor-tip-app-calculator/issues"
+  },
+  "homepage": "https://github.com/Gastonfauret/Frontend-Mentor-tip-app-calculator#readme"
+}
