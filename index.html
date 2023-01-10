@@ -12,231 +12,7 @@
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    body {
-      display: grid;
-      place-content: center;
-      font-family: 'Space Mono', monospace;
-      background-color: hsl(185, 41%, 84%);
-    }
-
-    .container {
-      width: 100vh;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      background-color: hsl(185, 41%, 84%);
-      justify-content: center;
-      align-items: center;
-    } 
-
-    .title {
-      font-size: 20px;
-      margin-bottom: 6vh;
-      margin-top: -10vh;
-      letter-spacing: 0.8vh;
-    }
-
-    .div-percent {
-      display: flex;
-      justify-content: space-evenly;
-      border-radius: 1vh;
-      width: 70vh;
-      height: 35vh;
-      align-items: center;
-      flex-direction: row;
-      background-color: hsl(0, 0%, 100%);
-    }
-
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      width: 31vh;
-      height: 30vh;
-      background-color:hsl(0, 0%, 100%);
-      border-radius: 1vh;
-      justify-content: space-around;
-    }
-
-    .tip-message {
-      width: 31vh;
-      height: 30vh;
-      background-color: hsl(183, 100%, 15%);
-      border-radius: 1vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    .first-title-tip {
-      display: flex;
-      align-items: center;
-      gap: 8vh;
-    }
-
-    .first-words-container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .tip-amount, .total-amount {
-      margin: 0px;
-      color: hsl(0, 0%, 100%);
-      font-size: 11px;
-    }
-
-    .person {
-      margin: 0px;
-      color: hsl(184, 14%, 56%);
-      font-size: 9px;
-    }
-
-    .second-title-tip {
-      display: flex;
-      align-items: center;
-      gap: 8vh;
-    }
-
-    .price-message, .total-message {
-      color: hsl(172, 67%, 45%);
-      font-size: 34px;
-      margin: 0px;
-    }
-
-    .second-words-container {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .reset {
-      width: 25vh;
-      height: 3.5vh;
-      border-radius: 0.5vh;
-      border: none;
-      background-color: hsl(172, 67%, 45%);
-      color: hsl(183, 100%, 15%);
-      font-family: 'Space Mono', monospace;
-    }
-
-    .bill {
-      font-size: 11px;
-      margin-left: 1.2vh;
-      margin-bottom: 0.5vh;
-    }
-
-    .select-tip, .people {
-      font-size: 11px;
-      margin-left: 1.2vh;
-      margin-bottom: 0.5vh;
-      margin-top: 2.5vh;
-    }
-
-    .bill-message-container {
-      display: flex;
-      align-items: center;
-      width: 28.2vh;
-      height: 3vh; 
-      margin-left: 1.2vh;
-      background-color: hsl(189, 41%, 97%);
-      border-radius: 0.5vh;
-      justify-content: space-between;
-    }
-
-    .bill-message {   
-      width: 40%; 
-      height: 100%;
-      border: none;
-      background-color: transparent;
-      font-family: 'Space Mono', monospace;
-      color: hsl(183, 100%, 15%);
-      font-size: 18px;
-    }
-
-    .people-message {   
-      width: 16%; 
-      height: 100%;
-      border: none;
-      background-color: transparent;
-      font-family: 'Space Mono', monospace;
-      color: hsl(183, 100%, 15%);
-      font-size: 18px;
-    }
-
-    img {
-      width: 3.1%;
-      height: 45%;
-      margin-left: 1.4vh;
-    }
-
-    .person-image {
-      width: 3.3%;
-      height: 43.5%;
-      margin-left: 1.4vh;
-    }
-    .people-message-container {
-      display: flex;
-      align-items: center;
-      width: 28.2vh;
-      height: 3vh; 
-      margin-left: 1.2vh;
-      background-color: hsl(189, 41%, 97%);
-      border-radius: 0.5vh;
-      justify-content: space-between;     
-    }
-
-    .prices-container {
-      width: 31vh;
-      height: 20vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 3vh;
-      margin: none;
-    }
-
-    .button-container {
-      width: 30vh;
-      margin-left: 1.2vh;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 0.7vh;
-    }
-
-    .btn {
-      width: 9vh;
-      height: 4vh;
-      font-family: 'Space Mono', monospace;
-      background-color: hsl(183, 100%, 15%);
-      border-radius: 0.5vh;
-      border: none;
-      color: hsl(0, 0%, 100%);
-      font-size: 18px;
-    }
-
-    .btn:hover {
-      background-color: hsl(172, 67%, 45%);
-      color: hsl(0, 0%, 100%);
-      cursor: pointer;
-    }
-
-    .custom-percent:hover {
-      background-color: hsl(0, 0%, 100%);
-      color: hsl(183, 100%, 15%);
-    }
-
-    .attribution { 
-      font-size: 11px; 
-      text-align: center; 
-      margin-top: 3vh;
-    }
-
-    .attribution a { 
-      color: hsl(228, 45%, 44%); 
-    }
-  </style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -249,15 +25,14 @@
   <div class="div-percent"> 
 
   <!-- Contenedor de la Izquierda -->
-  <div class="main-container">
+  <div class="left-container">
 
     <p class="bill">Bill</p>
 
       <div class="bill-message-container">
         <img src="./images/icon-dollar.svg">
         <input class="bill-message" type="number">
-      </div>
-      
+      </div>      
 
       <p class="select-tip">Select Tip %</p>
       
@@ -280,42 +55,47 @@
       
   </div>
 
-  <!--Contenedor General de la Derecha-->
-  <div class="tip-message">
-    
-      <!--Contenedor de la Primera Linea: 2 Objetos-->
-      <div class="first-title-tip">
-        <!--Contendor de la Izquierda: 2 objetos-->
-        <div class="first-words-container">
+  <!-- Contenedor de la Derecha -->
+  <div class="right-container">
+    <!-- Contenedor Primera linea: 2 Elementos (Izq: Textos, Der: Precio) -->
+    <div class="line-containers">
+      <div class="first-line">
+        <!-- Contenedor de los Textos (izq.) -->
+        <div class="first-text-container">
           <p class="tip-amount">Tip Amount</p>
           <p class="person">/ person</p>
-        </div>      
-        <!--Contenedor de la derecha: 1 objeto-->
-        <div class="price-message-container">
-          <p class="price-message">$4.27</p>
         </div>
-    </div>
-
-    <!-- Contenedor de los Textos-->
-    <div class="prices-container">
-      <!--Contenedor de la Segunda Linea: 2 Objetos-->
-      <div class="second-title-tip">
-        <!--Contendor de la Izquierda: 2 objetos-->
-        <div class="second-words-container">
-          <p class="total-amount">Total</p>
+      
+        <div class="price-container">
+          <p class="tip-price">$4.27</p>
+        </div>
+      </div>
+  
+      <!-- Contenedor Segunda linea: 2 Elementos (Izq: Textos, Der: Precio) -->
+      <div class="second-line">
+        <!-- Contenedor de los Textos (izq.) -->
+        <div class="second-text-container">
+          <p class="total">Total</p>
           <p class="person">/ person</p>
         </div>
-
-        <!--Contenedor de la derecha: 1 objeto-->
-        <div class="second-price-message-container">
-          <p class="total-message">$32.79</p>
+        <div class="price-container">
+          <p class="tip-price">$ 32.79</p>
         </div>
-
-      </div>
+        
+    </div>
+    <div class="button-reset-container">
+      <button class="reset">RESET</button>
     </div>    
+  </div>
 
-    <button class="reset">RESET</button>
-  </div>    
+    
+
+  </div> 
+
+    
+    
+    
+  </div> 
 </div>
 
   <div class="attribution">
@@ -323,8 +103,7 @@
     Coded by <a href="#">Gaston Ariel Fauret Caceres</a>.
   </div>
 
-</div>
-  
+</div>  
   
 </body>
 </html>

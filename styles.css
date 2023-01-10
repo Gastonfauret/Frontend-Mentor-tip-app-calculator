@@ -1,0 +1,235 @@
+body {
+    display: grid;
+    place-content: center;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.container {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+    justify-content: center;
+    align-items: center;
+} 
+
+.title {
+    font-size: 20px;
+    margin-bottom: 6vh;
+    margin-top: -10vh;
+    letter-spacing: 0.8vh;
+}
+
+.div-percent {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 1vh;
+    width: 70vh;
+    height: 35vh;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 31vh;
+    height: 30vh;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 1vh;
+    justify-content: space-around;
+}
+
+.right-container {
+    background-color: hsl(183, 100%, 15%);
+    width: 46%;
+    height: 85%;
+    border-radius: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.line-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    margin-top: -40px;
+}
+
+.first-line, .second-line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    gap: 9vh;
+}
+
+.first-line {
+    margin-top: 2vh;
+}
+
+.first-text-container, .second-text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.tip-amount, .total {
+    color: hsl(0, 0%, 100%);
+    font-size: 9px;
+    margin: 0px;
+}
+
+.person {
+    color: hsl(189, 41%, 97%);
+    font-size: 7px;
+    margin: 0px;
+}
+
+.tip-price {
+    color: hsl(172, 67%, 45%);
+    font-size: 28px;
+}
+
+.button-reset-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;    
+}
+
+.reset {
+    width: 28vh;
+    height: 3.5vh;
+    border-radius: 0.5vh;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+}
+
+.bill {
+    font-size: 11px;
+    margin-left: 1.2vh;
+    margin-bottom: 0.5vh;
+}
+
+.select-tip, .people {
+    font-size: 11px;
+    margin-left: 1.2vh;
+    margin-bottom: 0.5vh;
+    margin-top: 2.5vh;
+}
+
+.bill-message-container {
+    display: flex;
+    align-items: center;
+    width: 28.2vh;
+    height: 3vh; 
+    margin-left: 1.2vh;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 0.5vh;
+    justify-content: space-between;
+}
+
+.bill-message {   
+    width: 40%; 
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+
+.people-message {   
+    width: 16%; 
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+
+img {
+    width: 3.1%;
+    height: 45%;
+    margin-left: 1.4vh;
+}
+
+.person-image {
+    width: 3.3%;
+    height: 43.5%;
+    margin-left: 1.4vh;
+}
+
+.people-message-container {
+    display: flex;
+    align-items: center;
+    width: 28.2vh;
+    height: 3vh; 
+    margin-left: 1.2vh;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 0.5vh;
+    justify-content: space-between;     
+}
+
+.prices-container {
+    width: 31vh;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    margin: none;
+}
+
+.button-container {
+    width: 30vh;
+    margin-left: 1.2vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0.7vh;
+}
+
+.btn {
+    width: 9vh;
+    height: 4vh;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.5vh;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.custom-percent:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(183, 100%, 15%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 3vh;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
